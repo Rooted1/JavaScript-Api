@@ -13,8 +13,7 @@ http.get(options, function (response) {
     const quote = JSON.parse(quoteData);
     const quoteText = quote.quoteText;
     const quoteAuthor = quote.quoteAuthor
-    console.log(quoteText );
+    console.log(quoteText + "- " + quoteAuthor);
   });
- // response.on('error', console.error)
 }).on('error', console.error)
   
